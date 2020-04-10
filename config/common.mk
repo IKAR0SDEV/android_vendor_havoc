@@ -130,9 +130,7 @@ PRODUCT_PACKAGES += \
 
 # Havoc packages
 PRODUCT_PACKAGES += \
-    Browser \
     CustomDoze \
-    GalleryGoPrebuilt \
     Longshot \
     OmniStyle \
     PixelThemesStub2019 \
@@ -145,6 +143,14 @@ PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt \
     SoundPickerPrebuilt \
     TouchGestures
+
+PRODUCT_PACKAGES -= \
+Browser \
+GalleryGoPrebuilt
+
+# Overlays
+PRODUCT_PACKAGES += \
+    NexusLauncherReleaseOverlay
 
 # Accents
 PRODUCT_PACKAGES += \
@@ -294,3 +300,11 @@ PRODUCT_PACKAGES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
 -include vendor/havoc/config/version.mk
+
+# Gapps
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
+# PixelStyle
+$(call inherit-product-if-exists, vendor/pixelstyle/config.mk)
