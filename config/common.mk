@@ -142,7 +142,8 @@ PRODUCT_PACKAGES += \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SoundPickerPrebuilt \
-    TouchGestures
+    TouchGestures \
+    StockWallp
 
 PRODUCT_PACKAGES -= \
 Browser \
