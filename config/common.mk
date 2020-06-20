@@ -134,7 +134,6 @@ PRODUCT_PACKAGES += \
     Longshot \
     OmniStyle \
     PixelThemesStub2019 \
-    ShadyQuickStep \
     NexusLauncherRelease \
     NexusWallpapersStubPrebuilt2019Static \
     OmniStyle \
