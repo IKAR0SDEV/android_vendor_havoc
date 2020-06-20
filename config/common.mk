@@ -132,6 +132,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomDoze \
     Longshot \
+    NexusLauncherRelease \
     OmniStyle \
     PixelThemesStub2019 \
     NexusLauncherRelease \
